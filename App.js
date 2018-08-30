@@ -9,8 +9,10 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
+import Judul from './Components/Judul';
 
 const instructions = Platform.select({
   
@@ -21,17 +23,25 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+      <Judul/>
         <Text style={styles.welcome}>
           Welcome!
         </Text>
         <Text style={styles.instructions}>
           Nama  : Hanif Tria Firmansyah
+        </Text>
+        <Text style={styles.instructions}>
           Kelas : XI RPL 3
+        </Text>
+        <Text style={styles.instructions}>
           No    : 23
         </Text>
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <Image
+         source={require('./aaa.jpg')}
+        />
       </View>
     );
   }
