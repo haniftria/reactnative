@@ -23,7 +23,8 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-      <Judul/>
+      <Judul title="BIODATA"/>
+      <Judul title="LOGIN"/>
         <Text style={styles.welcome}>
           Welcome!
         </Text>
@@ -40,6 +41,7 @@ export default class App extends Component<Props> {
           {instructions}
         </Text>
         <Image
+         style={{width : 200, height : 300}}
          source={require('./aaa.jpg')}
         />
       </View>
